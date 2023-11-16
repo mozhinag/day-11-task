@@ -44,7 +44,7 @@ function getWeather(countryname) {
     .then((response) => response.json())
     .then((weatherData) => {
       console.log(`Weather in ${countryname}:`, weatherData);
-      // Handle the weather data as needed (update the UI, display in a modal, etc.)
+     
       alert(`Weather in ${countryname}: ${weatherData.weather[0].description}`);
     })
     .catch((error) => console.error('Error fetching weather data:', error));
